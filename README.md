@@ -10,6 +10,18 @@ This program runs brainf\*ck programs stored in UTF-8 encoded plaintext files wi
 - `[` : if the byte at the data pointer is zero, skip to the command after `]`
 - `]` : if the byte at the data pointer is non-zero, jump the corresponding `[`
 
+## Installation
+
+Use a C compiler to compile the `bfvm.c` file into a binary called `bfvm`. If you are using the *gcc* compiler the command is `$ gcc bfvm.c -o bfvm`. `
+
 ## Usage
 
+*Hello world* in brainf\*ck is supplied in the repository.
+
+```bash
+$ bfvm <FILE>
+...
+$ bfvm helloworld.bf
+Hello World!
+```
 
